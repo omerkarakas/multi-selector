@@ -45,3 +45,7 @@
   font-weight: 700;
   background-color: unset;
 }
+
+.active {
+  background-color: lightgray;
+}
