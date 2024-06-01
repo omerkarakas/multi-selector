@@ -48,7 +48,8 @@ function App() {
 
   return (
     <div className="flex flex-col gap-6 p-8 max-w-[600px]">
-      <h1 className="text-3xl">Rick And Morthy, MultiSelect Component Demo</h1>
+      <h1 className="text-2xl">Rick And Morthy</h1>
+      <h1 className="text-3xl">MultiSelect Component Demo</h1>
       {errorMessage ? (
         <div>{errorMessage}</div>
       ) : (
@@ -58,9 +59,27 @@ function App() {
               <div>Loading...</div>
             </>
           ) : (
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               <MultiSelect characters={characters} />
               {errorMessage && <div>{errorMessage}</div>}
+              <div className="h-16 border border-slate-300 rounded-md flex p-2">
+                Another component, #1
+              </div>
+              <div className="h-40 border border-slate-300 rounded-md flex p-2">
+                Another component, #2
+              </div>
+              <div className="h-24 border border-slate-300 rounded-md flex p-2">
+                Another component, #3
+              </div>
+              <div className="h-16 border border-slate-300 rounded-md flex p-2">
+                Another component, #4
+              </div>
+              <div className="h-40 border border-slate-300 rounded-md flex p-2">
+                Another component, #5
+              </div>
+              <div className="h-24 border border-slate-300 rounded-md flex p-2">
+                Another component, #6
+              </div>
             </div>
           )}
         </>

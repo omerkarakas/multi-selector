@@ -186,7 +186,7 @@ function MultiSelect<T extends Character>({ characters }: { characters: T[] }) {
       </div>
 
       {showResults && filteredCharacters.length > 0 && (
-        <div className="relative">
+        <div className="relative bg-white z-50 opacity-100">
           <div className="border-2 border-slate-400 rounded-xl absolute z-10 top-2 max-h-96 overflow-y-scroll w-full">
             {filteredCharacters.map((filteredCharacter, index) => {
               return (
@@ -210,7 +210,7 @@ function MultiSelect<T extends Character>({ characters }: { characters: T[] }) {
                   selected={selectedCharacters.includes(filteredCharacter)}
                   searchTerm={searchTerm}
                   className={
-                    cursor === index ? "active scroll-mt-4" : undefined
+                    cursor === index ? "active scroll-mt-4" : "bg-white"
                   }
                 />
               );
